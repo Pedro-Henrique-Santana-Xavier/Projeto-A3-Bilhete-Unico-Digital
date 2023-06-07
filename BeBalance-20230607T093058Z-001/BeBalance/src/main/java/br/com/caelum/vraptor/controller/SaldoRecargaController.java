@@ -27,7 +27,7 @@ public class SaldoRecargaController {
 	
 	@Get("")
 	public void saldorecarga() {
-		//usuarioDao.select(usuario.getSaldo());
+		usuarioDao.select(usuario.getSaldo());
 	}
 	
 	
@@ -35,7 +35,7 @@ public class SaldoRecargaController {
 	@IncludeParameters
 	@Post("inserirrecarga")
 	public void inserirrecarga(Usuario usuario) {	
-	//usuarioDao.insertOrUpdate(usuario.getSaldo());	
+	usuarioDao.insertOrUpdate(usuario.getSaldo());	
     result.redirectTo(SaldoRecargaController.class).saldorecarga();
 	}
 }
