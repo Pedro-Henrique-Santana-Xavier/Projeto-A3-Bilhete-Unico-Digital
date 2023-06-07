@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(34, 34, 34);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    padding: 50px 40px;
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+.container .title {
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 13px;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: gold;
+}
+
+.container form .user-login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.user-login .input-box input {
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.user-login .input-box input:focus,
+.user-login .input-box input:valid {
+    border-color: gold;
+}
+
+.user-login .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+.user-login .input-box input {
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+form .button button {
+    margin-top: 5px;
+    height: 40px;
+    width: calc(100% / 2 - 10px);
+    outline: none;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 500px;
+    border-radius: 5px;
+    background-color: gold;
+}
+
+.cadastro{
+    margin-top: 10px;
+}
+
+.cadastro a{
+    color: gold;
+    text-decoration: none;
+}

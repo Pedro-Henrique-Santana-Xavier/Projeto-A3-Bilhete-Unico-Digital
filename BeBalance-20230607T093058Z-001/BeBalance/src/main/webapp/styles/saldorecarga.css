@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #24252A;
+}
+
+/*-------------------------NAV------------------------------*/
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+span, a, button{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav a:hover{
+    color: gold;
+}
+
+
+.nav #title{
+    cursor: pointer;
+    color: gold;
+    font-size: 2em;
+    margin-right: auto;
+}
+
+.nav button{
+    padding: 9px 25px;
+    background-color: gold;
+    color: #24252A;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+.nav button:hover{
+    background-color: transparent;
+    border: 2px solid gold;
+    color: gold;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+/*-------------------------SALDO------------------------------*/
+
+.saldo{
+    display: flex;
+    padding: 2em;
+    padding-left: 5em;
+    color: #24252A;
+    background-color: gold;
+}
+
+.saldo span{
+    font-size: 25pt;
+    color: #24252A;
+}
+ 
+#recarga{
+    margin-top: 1cm;
+    padding-left: 2.5em;
+    color: #edf0f1;
+}
+
+/*-------------------------RECARGA------------------------------*/
+
+form{
+    line-height: 1.5rem;
+    padding: 10px;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    margin-right: 95em;
+    border: 1px solid gold;
+    border-radius: 15px;
+}
+
+.checkboxs{
+    display: flex;
+    flex-direction: column;
+}
+
+#tipo-recarga-1, #tipo-recarga-2, #tipo-recarga-3, #tipo-recarga-4{
+    margin-right: 6px;
+}
+
+label{
+    font-weight: 500;
+    color: #edf0f1;
+    cursor: pointer;
+}
+
+#tipo-recarga-1:checked, #tipo-recarga-2:checked, #tipo-recarga-3:checked, #tipo-recarga-4:checked{
+    accent-color: gold;
+}
+
+#tipo-recarga-1:checked, #tipo-recarga-2:checked, #tipo-recarga-3:checked, #tipo-recarga-4:checked ~ label{
+    color: gold;
+
+}
+
+#fazer-recarga, #limpar{
+    padding: 9px 25px;
+    font-size: 15px;
+    margin-top: 1.5em;
+    background-color: gold;
+    color: #24252A;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+#limpar{
+    margin-left: 10px;
+}
+
+#limpar:hover, #fazer-recarga:hover{
+    background-color: transparent;
+    border: 2px solid gold;
+    color: gold;
+    border-radius: 50px;
+    transition: 0.5s;
+}

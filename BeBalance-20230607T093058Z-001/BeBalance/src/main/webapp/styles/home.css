@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: #24252A;
+}
+
+/*-------------------------NAV------------------------------*/
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+span, a, button{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav a:hover{
+    color: gold;
+}
+
+
+.nav #title{
+    cursor: pointer;
+    color: gold;
+    font-size: 2em;
+    margin-right: auto;
+}
+
+.nav button{
+    padding: 9px 25px;
+    background-color: gold;
+    color: #24252A;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+}
+
+.nav button:hover{
+    background-color: transparent;
+    border: 2px solid gold;
+    color: gold;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+/*-------------------------TEXTO PRINCIPAL------------------------------*/
+
+.maintext{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    font-size: 35px;
+    line-height: 1.5em;
+    margin-top: -1.9cm;
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+}
+
+.thirtext{
+    text-align: center;
+    color: gold;
+    font-size: 16px;
+    margin-bottom: -5cm;
+}
+
+/*-------------------------GUIA------------------------------*/
+
+.guia span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    height: 20vh;
+    color: gold;
+}
+
+.container-guia{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5cm;
+    margin-bottom: 2cm;
+}
+
+.container-guia .borda{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: gold;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container-guia .borda .caixa{
+   position: absolute;
+    width: 276px;
+    height: 376px;
+    margin-bottom: 20px;
+    margin-top: 13px;
+    margin-left: 12px;
+    border-radius: 20px; 
+    background-color: rgb(34, 34, 34);
+}
+
+.container-guia .borda .caixa .conteudo{
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 0.7cm;
+    top: 90px;
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+/*-------------------------CONTATO------------------------------*/
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    margin-bottom: 2cm;
+    color: #edf0f1;
+}
+
+.contato h1{
+    color: gold;
+}
+
+.container-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2cm;
+    gap: 3cm;
+}
+
+img{
+   height: 90px;
+   width: 90px;
+}
+
+#linkedin{
+    width: 130px;
+}
+
+#email{
+    width: 120px;
+}
