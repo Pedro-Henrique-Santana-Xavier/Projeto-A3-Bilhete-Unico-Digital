@@ -52,11 +52,11 @@ public class LoginController {
 	@IncludeParameters
 	@Post ("validarlogin")
 	public void validarlogin(Usuario usuario, String validaremail, String validarsenha) {
-	/*boolean validarLogin = validaremail.equals(usuario.getEmail());
+	boolean validarLogin = validaremail.equals(usuario.getEmail());
 	validator.addIf(!validarLogin, new SimpleMessage("verificaLogin", "Email incorreto"));
 	boolean validarLogin1 = validarsenha.equals(usuario.getSenha());
 	validator.addIf(!validarLogin1, new SimpleMessage("verificaLogin1", "Senha Incorreta"));
-	validator.onErrorRedirectTo(this).login();*/
+	validator.onErrorRedirectTo(this).login();
 	result.redirectTo(DashbordController.class).dashbord();
 	
 }
